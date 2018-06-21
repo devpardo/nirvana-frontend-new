@@ -1,0 +1,212 @@
+//base class set
+@import "../../assets/stylesheets/public";
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  overflow: auto;
+  background-color: $color-blue9;
+  font-size: 12px;
+  font-family: Helvetica, Arial, "Microsoft Yahei", 微软雅黑, sans-serif;
+  overflow-x: hidden; //禁止body左右滑动
+  padding: 0;
+  margin: 0;
+  color: #333333;
+  height: 100%;
+}
+input[type="date"]:not(.has-value):before {
+  color: grey;
+  content: attr(placeholder);
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+.clearfix {
+  display: block;
+  clear: both;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+.fa {
+  font: normal normal normal 14px/1 FontAwesome;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.container-flex {
+  display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box; /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox; /* 混合版本语法: IE 10 */
+  display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+  display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+  flex-wrap: wrap;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.item-flex {
+  -webkit-flex: 0 1 auto;
+  -moz-flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+//reset mint-ui style and the header bar height is settled
+.body {
+  padding: 1.2rem 0;
+}
+// reset mint-ui
+#app {
+  height: 100%;
+  // for null
+  .no-data {
+    margin: 10px auto;
+    color: rgba(#fff, 0.5);
+    text-align: center;
+  }
+  .mint-cell {
+    min-height: 1.2rem;
+    .mint-cell-wrapper {
+      font-size: 14px;
+    }
+  }
+  .mint-header-title {
+    font-size: 12px;
+  }
+  .mint-cell:last-child {
+    // background-image: inherit;
+  }
+  .mint-tabbar {
+    z-index: 90;
+  }
+  .mint-field .mint-cell-title {
+    width: auto;
+  }
+  .mint-cell .mint-cell-label {
+    font-size: 12px;
+  }
+  .mint-field .mint-cell-value {
+    padding: 0px 5px;
+    color: $color-yellow13;
+  }
+  .mint-navbar .mint-tab-item {
+    padding: 0.3rem 0;
+    background-color: $color-blue8;
+    color: rgba(#fff, 0.5);
+
+    .mint-tab-item-label {
+      font-size: 12px;
+    }
+  }
+  input[readonly]:before {
+    content: "";
+  }
+}
+
+.promo-modal{
+  .tabs-component {
+    .tabs-component-tabs {
+      text-align: center;
+      border-radius: 4px 4px 0 0;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      // border-bottom: 1px solid #e3e3e3;
+      .tabs-component-tab.is-active {
+        background: #ffe56d;
+          .tabs-component-tab-a{
+            color: #000000;
+          }
+          // .tabs-component-tab-a:nth-child(1){
+          //   border-radius: 5px 0 0 0;
+          // }
+          // .tabs-component-tab-a:nth-child(2){
+          //   border-radius: 5px 0 0 0;
+          // }
+          // .tabs-component-tab-a:nth-child(1){
+          //   border-radius: 5px 0 0 0;
+          // }
+      }
+
+      .tabs-component-tab {
+        display: inline-block;
+        width: 33.3333%;
+        background: #1a1e5f;
+
+        .tabs-component-tab-a {
+          display: block;
+          padding: 10px 15px;
+          text-decoration: none;
+          color: #fff
+        }
+        .prefix {
+          margin-right: .55em;
+          -ms-flex-align: center;
+          align-items: center;
+          display: -ms-flexbox;
+          -ms-flex-negative: 0;
+          flex-shrink: 0;
+          -ms-flex-pack: center;
+          justify-content: center;
+          min-width: 1.25rem;
+          padding: 0 .1em;
+          img {
+            position: relative;
+            top: 2px;
+            height: 15px;
+          }
+        }
+      }
+    }
+    .tabs-component-panels {
+      // background: hsl(0, 0%, 89%);
+      // padding: 20px; /
+      height: 370px;
+      overflow: auto;
+      .tabs-component-panel {
+        text-align: left;
+        .img-responsive {
+          max-width: 100%;
+          height: auto;
+          display:block
+        }
+        h1 {
+          color: white;
+          text-align: center;
+          margin: 20px auto;
+        }
+        .how-to-list {
+          li {
+            // border-bottom: 1px solid #dad7d7;
+            img {
+              display: block;
+              margin: 0 auto;
+              width: 300px;
+              height: 500px;
+            }
+            p {
+              display: block;
+              background: #dad9d9;
+              padding: 10px;
+              margin-bottom: 10px;
+            }
+            margin-bottom: 10px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}

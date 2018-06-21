@@ -1,0 +1,20 @@
+@mixin vmui-counter {
+  .vmui-counter {
+    overflow: hidden;
+
+    .roll-notice-item {
+      height: 100%;
+    }
+  }
+}
+
+@mixin vmui-counter-number {
+  .vmui-counter-number {
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    .wrap {
+      animation-timing-function: ease-in-out;
+    }
+  }
+}

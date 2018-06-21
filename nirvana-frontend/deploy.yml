@@ -1,0 +1,15 @@
+---
+- name: Deploy nirvana-frontend to my server
+  hosts: frontservers
+  vars:
+    ansistrano_deploy_from: ./dist
+    ansistrano_deploy_to: /mnt/www/nirvana_frontend/
+    ansistrano_keep_releases: 10
+    # There seems to be an issue with rsync in vagrant
+    ansistrano_deploy_via: rsync
+  user: deploy
+  roles:
+    - { role: carlosbuenosvinos.ansistrano-deploy }
+  tasks:
+    - name: restart nginx after deploy
+      shell: sudo service nginx restart

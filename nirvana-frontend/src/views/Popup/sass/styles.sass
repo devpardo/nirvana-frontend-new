@@ -1,0 +1,188 @@
+$color: #fff
+$red: #fb081e
+$yellow: #fffd43
+$font-family-text: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif
+$font-size: 12px
+$border-radius: 5px
+$baseBg: #000
+
+*
+  padding: 0
+  margin: 0
+
+html, body
+  width: 100%
+  height: 100%
+  .weight
+    font-weight: bold
+    font-size: 16px
+    padding-left: 3px
+  .popup-div
+    width: 375px
+    height: 667px
+    margin: auto
+
+    .right-side
+      position: absolute
+      right: 10px
+      top: 10px
+      z-index: 2
+      .btn-footer
+        height: 30px
+        width: 145px
+        background:
+          image: url('images/winning/button_03.png')
+          repeat: no-repeat
+          size: contain
+          position: cover
+          color: transparent
+        border: none
+
+        &:hover
+          background-image: url('images/winning/button_03_hover.png')
+          cursor: pointer
+
+    .lottery
+      background-image: url('images/lottery/bg_01.png')
+
+    .winning
+      background-image: url('images/winning/bg_02.png')
+
+      .container
+        top: 330px !important
+
+    .unfortunately
+      background-image: url('images/unfortunately/bg_03.png')
+
+      .container
+        top: 350px !important
+
+    .body
+      width: 100%
+      height: 100%
+      position: relative
+      color: #f9f9f9
+      background:
+        repeat: no-repeat
+        size: contain
+        position: center
+
+      .container
+        position: absolute
+        width: 100%
+        top: 370px
+        text-align: center
+        padding: 10px
+        box-sizing: border-box
+
+        .winning-amount
+          margin-top: 40px
+          color: $yellow
+          font-size: 60px
+          width: 100%
+          word-wrap: break-word
+          word-break: break-all
+          position: relative
+          .money
+            color: $yellow
+            font-size: 30px
+            vertical-align: middle
+
+        .btn-claim
+          background:
+            image: url('images/winning/button_02.png')
+            repeat: no-repeat
+            size: contain
+            color: transparent
+          height: 105px
+          width: 105px
+          border: none
+
+          &:hover
+            background-image: url('images/winning/button_02_hover.png')
+            cursor: pointer
+
+        .text-title
+          display: table
+          margin: 5px auto
+
+          span, img
+            display: table-cell
+            vertical-align: middle
+
+          img
+            margin: 0 5px
+
+        .timer
+          display: table
+          margin: 10px auto
+
+          div
+            background:
+              image: url('images/lottery/Countdown_bg.png')
+              repeat: no-repeat
+              size: contain
+            height: 50px
+            width: 40px
+            display: table-cell
+            vertical-align: middle
+            color: $red
+            font-size: 1.8em
+
+          span
+            display: table-cell
+            vertical-align: middle
+            font-size: 2em
+            padding-bottom: 10px
+
+        .btn
+          height: 60px
+          width: 60px
+          background:
+            image: url('images/lottery/button_01.png')
+            repeat: no-repeat
+            size: contain
+            position: cover
+            color: transparent
+          border: none
+
+          &:hover
+            background-image: url('images/lottery/button_01_hover.png')
+            cursor: pointer
+
+      .footer
+        width: 100%
+        padding: 5px 10px
+        position: absolute
+        bottom: 0
+        font-size: 1.1em
+        display: table
+        box-sizing: border-box
+        p
+          color: #a7000e
+          font-weight: 550
+
+
+        div
+          display: table-cell
+          width: 50%
+          vertical-align: bottom
+
+        .right-side
+          text-align: right
+          padding-top: 25px
+
+          .btn-footer
+            height: 30px
+            width: 145px
+            background:
+              image: url('images/winning/button_03.png')
+              repeat: no-repeat
+              size: contain
+              position: cover
+              color: transparent
+            border: none
+
+            &:hover
+              background-image: url('images/winning/button_03_hover.png')
+              cursor: pointer

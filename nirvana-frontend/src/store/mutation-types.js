@@ -1,0 +1,20 @@
+// user action
+export const SET_USER_INFO = "SET_USER_INFO"
+export const REMOVE_USER_INFO = "REMOVE_USER_INFO"
+// sundry action
+export const SET_NAVIGATION_TITLE = "SET_NAVIGATION_TITLE"
+export const SET_QUICKLY_LOGIN = "SET_QUICkKLY_LOGIN"
+export const DELETE_BANKS_FLAG = "DELETE_BANKS_FLAG"
+export const SET_SEARCH_OBJ = "SET_SEARCH_OBJ"
+export const SET_TASKS_OBJ = "SET_TASKS_OBJ"
+export const SET_TASK_DETAIL = "SET_TASK_DETAIL"
+export const PRIVILEGES = "PRIVILEGES"
+export const PROFILE_INFO_EDIT_DONE = "PROFILE_INFO_EDIT_DONE"
+export const BALANCE_HISTORIES_FILTRATE = "BALANCE_HISTORIES_FILTRATE"
+export const CHANNEL_CODE = "CHANNEL_CODE"
+export const MESSAGE_COUNT = "MESSAGE_COUNT"
+export const PRIZE_FLAG = "PRIZE_FLAG"
+export const RED_PACKET = "RED_PACKET"
+// chat
+export const SET_CABLE = "SET_CABLE"
+export const SET_CHAT = "SET_CHAT"

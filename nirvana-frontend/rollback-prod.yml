@@ -1,0 +1,11 @@
+---
+- name: Rollback nirvana-frontend to nirvana production environment.
+  hosts: na-prod
+  vars:
+    ansistrano_deploy_to: /mnt/www/yt_wap/
+  user: deploy
+  roles:
+    - { role: carlosbuenosvinos.ansistrano-rollback }
+  tasks:
+    - name: restart nginx after rollback
+      shell: sudo service nginx restart
